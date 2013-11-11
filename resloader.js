@@ -1,8 +1,8 @@
 /*
-  Resloader, the resources loader
+  Resloader (https://github.com/Orion98MC/resloader.js)
 
-  Copyright (c), 2013-2014, Thierry Passeron
-  The MIT License
+  Copyright (c) 2013 Thierry Passeron
+  MIT License (MIT)
 **/
 
 (function (global) {
