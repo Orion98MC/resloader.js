@@ -6,6 +6,12 @@ It doesn't require jquery or any other framework.
 It loads images and provides progress feedback so that when your page is loaded the user gets a clean finished result.
 Resloader also sets (by default) an expiration cookie to prevent reapeated load sequence.
 
+```
+Original: 10541 bytes.
+Minified: 4947 bytes.
+Gzipped:  1156 bytes.
+```
+
 # Usage
 
 Put the script at the bottom of the page or call it when the DOM is ready.

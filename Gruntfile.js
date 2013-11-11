@@ -4,9 +4,12 @@ module.exports = function (grunt) {
   grunt.initConfig({
     
     uglify: {
-      dev: {
+      dist: {
         files: {
           'dist/resloader.min.js': ['resloader.js']
+        },
+        options: {
+          report: 'gzip'
         }
       }
     },
