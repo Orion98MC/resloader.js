@@ -1,0 +1,30 @@
+#resloader_overlay {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+}
+
+#resloader_progress {
+  width: 50%;
+  margin: auto;
+}
+
+#resloader_indicator {
+  border: 1px solid white;
+  background-color: transparent;
+  width: 80%;
+  height: 20px;
+  
+  border-radius: 10px;
+}
+
+#resloader_indicator * {
+  transition: all 0.2s linear;
+}
+
+#resloader_label {
+}
+
+#resloader_bar {
+  background-color: blue;
+}
