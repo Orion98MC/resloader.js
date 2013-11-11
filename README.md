@@ -60,6 +60,15 @@ Example:
 
 The UI can be styled using css.
 
+## Events
+
+Emits few events which you can grep in the source like:
+
+* progress, arg: data [Object], data.progress contains a Float between 0 and 1
+* start, no args, emitted on start()
+* finish, arg: data [Object], emitted when all assets have been loaded (whether an error occured or not). data.result contains a hash of urls as keys and whether the image width is greater than zero as values.
+* cookie, arg: firstTime [Boolean], if true no valid cookie was found, else a valid cookie was found thus, no preloading occured.
+
 
 # Browser support
 

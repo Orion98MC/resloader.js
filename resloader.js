@@ -170,7 +170,7 @@
         left--; 
         results[this.src] = this.naturalWidth > 0;
       
-        callback({ left: left, length: srcs.length, progress: (srcs.length - left) / srcs.length });
+        callback({ left: left, length: srcs.length, progress: (srcs.length - left) / srcs.length, image: this });
         if (left === 0) { callback({ finished: Date.now() - t0, left: left, length: srcs.length, results: results, progress: 1 }); } 
       };
     
@@ -258,7 +258,7 @@
     }
         
     var finish = function (data) {
-      self.emit('finish');
+      self.emit('finish', data);
       if (!(config.afterDelay < 0) && config.overlayDiv) {
         config.overlayDiv.parentNode.removeChild(config.overlayDiv);
       }
