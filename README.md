@@ -49,7 +49,7 @@ Since the autostart option is true by default, it starts right away the loading 
 
 ## Resloader.UI
 
-Resloader.UI returns a Resloader object with predefined UI. It provides an overlayed "progress bar" and can easily be extended.
+Resloader.UI returns a Resloader object with predefined UI. It provides an overlayed "progress bar" and can easily be extended and styled using CSS.
 
 Example:
 ```js
@@ -58,7 +58,6 @@ Example:
 
 ```
 
-The UI can be styled using css.
 
 ## Events
 
