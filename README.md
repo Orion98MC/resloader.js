@@ -8,6 +8,7 @@ Features:
 * event emitter. (nice decoupling)
 * prevents reapeated load sequence with a cookie. (can be tweaked)
 
+Sizes:
 ```
 Original: 10541 bytes.
 Minified: 4947 bytes.
@@ -37,10 +38,8 @@ When instanciated, the Resloader object collects all the images and background-i
 
 Example:
 ```js
-  
   var loader = Resloader({ options }, finishedCallback)
       .on('progress', updateCallback);
-
 ```
 
 (where options can be... found in resloader.js config hash)
@@ -53,9 +52,7 @@ Resloader.UI returns a Resloader object with predefined UI. It provides an overl
 
 Example:
 ```js
-  
   var loader = Resloader.UI({ options }, finishedCallback);
-
 ```
 
 
