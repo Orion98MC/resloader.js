@@ -21,12 +21,10 @@ Put the script at the bottom of the page or call it when the DOM is ready.
 
 Example:
 ```html
-
 <script type="text/javascript" src="js/resloader.js"></script>
 <script type="text/javascript">
   Resloader.UI();
 </script>
-
 ```
 
 # API
