@@ -59,3 +59,8 @@ Example:
 ```
 
 The UI can be styled using css.
+
+
+# Browser support
+
+Tested on Latest versions of Safari, Chrome, and Firefox.
