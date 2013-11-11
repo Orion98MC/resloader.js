@@ -1,10 +1,12 @@
 resloader.js
 ============
 
-Resloader is an event emitter resource loader for your web page.
-It doesn't require jquery or any other framework.
-It loads images and provides progress feedback so that when your page is loaded the user gets a clean finished result.
-Resloader also sets (by default) an expiration cookie to prevent reapeated load sequence.
+Resloader loads images and provides progress feedback so that when your page is loaded the user gets a clean finished result.
+
+Features:
+* standalone. (no framework required)
+* event emitter. (nice decoupling)
+* prevents reapeated load sequence with a cookie. (can be tweaked)
 
 ```
 Original: 10541 bytes.
@@ -37,7 +39,7 @@ Example:
 ```js
   
   var loader = Resloader({ options }, finishedCallback)
-      .on('progress', update);
+      .on('progress', updateCallback);
 
 ```
 
@@ -47,7 +49,7 @@ Since the autostart option is true by default, it starts right away the loading 
 
 ## Resloader.UI
 
-Resloader.UI is a Resloader object with predefined UI. It provides an overlayed "progress bar" and can easily be extended.
+Resloader.UI returns a Resloader object with predefined UI. It provides an overlayed "progress bar" and can easily be extended.
 
 Example:
 ```js
